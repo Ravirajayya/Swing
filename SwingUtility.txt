@@ -1,8 +1,11 @@
+The functionality is used to generate native system input events for the purposes of automation, self-running demos, and other applications where control of the mouse and keyboard is needed:
 Robot bot = new Robot();
 bot.mouseMove(p.x, p.y);
 bot.mousePress(InputEvent.BUTTON1_DOWN_MASK);
 bot.mouseRelease(InputEvent.BUTTON1_DOWN_MASK);
 
+
+UIManager manages the current look and feel, the set of available look and feels:
 UIManager.put("List.selectionBackground", Color.ORANGE);
 UIManager.put("List.selectionForeground", Color.BLACK);
 SwingUtilities.updateComponentTreeUI(jlist);
